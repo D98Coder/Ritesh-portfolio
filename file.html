@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Opportunities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .options {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .option {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .option:hover {
+      text-decoration: underline;
+    }
+    .internship-dropdown {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .internship-dropdown a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .internship-dropdown a:hover {
+      background-color: #ddd;
+    }
+    .intern{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .internship-card {
+      display: block;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      
+    }
+    .internship-card h3 {
+      margin-top: 0;
+    }
+    .apply-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .apply-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Internship Opportunities</h1>
+    <!-- <div class="options">
+      <div class="option" id="internshipOption">Internship</div>
+      <div class="option" id="applyOption">Apply</div>
+    </div> -->
+    <!-- <div class="internship-dropdown" id="internshipDropdown">
+      <a href="#">Web Development</a>
+      <a href="#">C Programming</a>
+      <a href="#">C++ Programming</a>
+      <a href="#">Java</a>
+      <a href="#">Python</a>
+      <a href="#">React</a>
+    </div> -->
+  </header>
+<div class="intern">
+  <div class="internship-card">
+    <h3>Web Development</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec fermentum neque. Nulla facilisi.</p>
+    <button class="apply-button">Apply</button>
+  </div>
+  <div class="internship-card">
+    <h3>C Programming</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec fermentum neque. Nulla facilisi.</p>
+    <button class="apply-button">Apply</button>
+  </div>
+  <div class="internship-card">
+    <h3>C++ Programming</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec fermentum neque. Nulla facilisi.</p>
+    <button class="apply-button">Apply</button>
+  </div>
+  <div class="internship-card">
+    <h3>Java</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec fermentum neque. Nulla facilisi.</p>
+    <button class="apply-button">Apply</button>
+  </div>
+  <div class="internship-card">
+    <h3>Python</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec fermentum neque. Nulla facilisi.</p>
+    <button class="apply-button">Apply</button>
+  </div>
+  <div class="internship-card">
+    <h3>React</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec fermentum neque. Nulla facilisi.</p>
+    <button class="apply-button">Apply</button>
+  </div>
+</div>
+
+  <footer>
+    <h3>Contact Us</h3>
+    <p>Email: contact@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </footer>
+
+  <script>
+    document.getElementById('internshipOption').addEventListener('click', function() {
+      document.getElementById('internshipDropdown').style.display = 'block';
+    });
+
+    document.getElementById('applyOption').addEventListener('click', function() {
+      document.getElementById('internshipDropdown').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
